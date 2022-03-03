@@ -18,15 +18,15 @@ Route::get('/', function () {
 });
 
 Route::get('todos', function() {
-	return view('welcome');
+	return view('todo');
 });
 
 Route::get('board', function() {
-	return view('welcome');
+	return view('board');
 });
 
 Route::get('calendar', function() {
-	return view('welcome');
+	return view('calendar');
 });
 
 
