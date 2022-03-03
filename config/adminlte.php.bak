@@ -241,8 +241,9 @@ return [
 		],
 		[
 			'text' => 'Board',
-			'url' => 'board',
+			'url'  => 'board',
 			'icon' => 'fa-solid fa-list-ul',
+		],
     ],
 
     /*

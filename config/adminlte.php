@@ -242,7 +242,7 @@ return [
 		[
 			'text' => 'Board',
 			'url'  => 'board',
-			'icon' => 'fa-solid fa-list-ul',
+			'icon' => 'far fa-list-alt',
 		],
     ],
 
