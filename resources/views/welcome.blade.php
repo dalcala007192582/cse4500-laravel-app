@@ -7,6 +7,7 @@
 @stop
 
 @section('content')
+    <h2>Testing 2</h2>
     <p>Welcome to this beautiful admin panel.</p>
 @stop
 
