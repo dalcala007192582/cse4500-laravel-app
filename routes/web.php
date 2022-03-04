@@ -30,7 +30,9 @@ Route::get('calendar', function() {
 });
 
 Route::get('events-feed', function() {
-	return view('events-feed');
+	$json_file = file_get_contents('events-feed.JSON');
+	$json_data = json_decode($json_file,true);
+	return $json_data;
 });
 
 
