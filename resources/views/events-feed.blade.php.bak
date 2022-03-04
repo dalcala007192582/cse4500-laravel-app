@@ -1,7 +1,7 @@
 <?php
 
 // Read the JSON file
-$json_file = file_get_contents('events-feed.JSON');
+$json_file = file_get_contents('/app/resources/views/events-feed.JSON');
 
 // Decode the JSON file
 $json_data = json_decode($json_file,true);
