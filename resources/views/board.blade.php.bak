@@ -2,10 +2,6 @@
 
 @section('title', 'title')
 
-@section('content_header')
-    <h1>Header</h1>
-@stop
-
 @section('content')
 	                    <div class="content-wrapper ">
 
