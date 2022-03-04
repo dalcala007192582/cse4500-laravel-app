@@ -2,6 +2,10 @@
 
 @section('title', 'Board')
 
+@section('content_header')
+    <h1>Board</h1>
+@stop
+
 @section('content')
 <div class="content">
   <div class="container-fluid">
