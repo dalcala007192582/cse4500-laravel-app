@@ -1,17 +1,11 @@
 @extends('adminlte::page')
 
-@section('title', 'title')
+@section('title', 'Board')
 
 @section('content')
-<div class="content-wrapper ">
-  <div class="content-header">
-     <div class="container-fluid">
-        <h1>Board</h1>
-     </div>
-   </div>
-    <div class="content">
-        <div class="container-fluid">
-            <div class="row">
+<div class="content">
+  <div class="container-fluid">
+   <div class="row">
   <div class="col-md-3 col-sm-6 col-12">
     <div class="card card-row card-secondary">
       <div class="card-header">
