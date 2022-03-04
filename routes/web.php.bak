@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('todos', function() {
-	return view('todo');
+	return view('todos');
 });
 
 Route::get('board', function() {
