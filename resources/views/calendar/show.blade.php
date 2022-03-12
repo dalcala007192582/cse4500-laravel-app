@@ -9,5 +9,5 @@
 @section('content')
   <h2>{{ $calendar->title; }}</h2>
   <div><p>{{ $calendar->begin; }} Start time</p></div>
-  <div><p>{{ $calendar->end; }} End time</p></div>
+  <div><p>{{ $calendar->finish; }} End time</p></div>
 @stop

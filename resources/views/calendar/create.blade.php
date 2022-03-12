@@ -11,6 +11,6 @@
     @csrf
     <x-adminlte-input name="title" label="Title" />
     <x-adminlte-input name="begin" type="datetime-local" name="partydate">
-    <x-adminlte-input name="end" type="datetime-local" name="partydate">
+    <x-adminlte-input name="finish" type="datetime-local" name="partydate">
 </form>
 @stop

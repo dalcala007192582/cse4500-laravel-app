@@ -18,7 +18,7 @@
           <td>{{ $calendar->id }}</td>
           <td>{{ $calendar->title }}</td>
 		  <td>{{ $calendar->begin }}</td>
-		  <td>{{ $calendar->end }}</td>
+		  <td>{{ $calendar->finish }}</td>
         </tr>
         @endforeach
 
