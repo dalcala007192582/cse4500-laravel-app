@@ -13,12 +13,12 @@
       <div class="card-body p-0">
         <div id="calendar" class="fc fc-media-screen fc-direction-ltr fc-theme-bootstrap">
 		
-		@foreach($todos AS $todo)
+		@foreach($calendars AS $calendar)
         <tr>
-          <td>{{ $todo->id }}</td>
-          <td>{{ $todo->title }}</td>
-          <td><div class="progress progress-xs"><div class="progress-bar progress-bar-danger" style="width: {{ $todo->progress }}%"></div></div></td>
-          <td><a class="btn btn-default btn-sm" href="{{ route('todos.show',['todo'=>$todo->id]) }}">View</a></td>
+          <td>{{ $calendar->id }}</td>
+          <td>{{ $calendar->title }}</td>
+		  <td>{{ $calendar->begin }}</td>
+		  <td>{{ $calendar->end }}</td>
         </tr>
         @endforeach
 
@@ -27,7 +27,7 @@
     </div>
   </div>
 </div>
-<a href="{{ route('todos.create') }} " class="btn btn-primary" >Create</a>
+<a href="{{ route('calendars.create') }} " class="btn btn-primary" >Create</a>
 @stop
 
 @section('css')

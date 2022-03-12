@@ -12,11 +12,22 @@
     <div class="card card-primary">
       <div class="card-body p-0">
         <div id="calendar" class="fc fc-media-screen fc-direction-ltr fc-theme-bootstrap">
+		
+		@foreach($calendars AS $calendar)
+        <tr>
+          <td>{{ $calendar->id }}</td>
+          <td>{{ $calendar->title }}</td>
+		  <td>{{ $calendar->begin }}</td>
+		  <td>{{ $calendar->end }}</td>
+        </tr>
+        @endforeach
+
         </div>
       </div>
     </div>
   </div>
 </div>
+<a href="{{ route('todos.create') }} " class="btn btn-primary" >Create</a>
 @stop
 
 @section('css')
