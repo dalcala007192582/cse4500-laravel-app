@@ -42,7 +42,7 @@ class CalendarController extends Controller
 			 'finish' => 'required',
         ]);
 
-        $todo = Calendar::create([ 
+        $calendar = Calendar::create([ 
              'title' => $request->title, 
              'begin' => $request->start,
 			 'finish' => $request->end,
@@ -59,7 +59,8 @@ class CalendarController extends Controller
      */
     public function show($id)
     {
-        //
+        $todo= Calendar::find($id); 
+        return view('calendar.show',compact('calendar'));
     }
 
     /**
