@@ -14,7 +14,7 @@ class CalendarController extends Controller
      */
     public function index()
     {
-        $calendar = Calendar::all();
+        $calendars = Calendar::all();
         return view('calendar',compact('calendar'));
     }
 
@@ -25,7 +25,7 @@ class CalendarController extends Controller
      */
     public function create()
     {
-        return view('calendar.create');
+        return view('calendars.create');
     }
 
     /**
@@ -59,8 +59,8 @@ class CalendarController extends Controller
      */
     public function show($id)
     {
-        $todo= Calendar::find($id); 
-        return view('calendar.show',compact('calendar'));
+        $calendars= Calendar::find($id); 
+        return view('calendars.show',compact('calendar'));
     }
 
     /**
