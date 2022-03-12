@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TodoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,3 +53,5 @@ Route::get('/db-migrate', function() {
 Route::fallback(function() {
 	return view('fallback');
 });
+
+Route::resource('/todos', TodoController::class);
